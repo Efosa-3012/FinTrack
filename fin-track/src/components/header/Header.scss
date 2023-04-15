@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1rem;
+    height: 15vh;
+    .header-logo{
+        font-size: 1.2rem;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        list-style: none;
+       
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        padding-right: 1rem;
+    }
+}
