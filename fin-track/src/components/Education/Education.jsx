@@ -5,7 +5,7 @@ import "./Education.css"
 
 const Card = ({title, description, icon}) => {
     return (
-        <div className="card">
+        <div className="card" href>
             <div className="card__icon">
                 <i className={icon}></i>
             </div>
