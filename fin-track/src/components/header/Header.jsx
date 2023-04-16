@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss"
+import logo from "../../assets/trace.svg"
 
 const Header = () => {
   return (
     <div className="header">
       <div className="header-logo">
-        <h1>FinTrack</h1>
+        <img src={logo} alt="logo" />
       </div>
       <div className="navbar">
         <ul>
