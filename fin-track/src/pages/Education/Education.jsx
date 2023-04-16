@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Education from "../../components/Education/Education";
+import Chat from "../../components/chatgpt/Chatgpt";
 //import "//home/Home.css"
 
 const Edu = () => {
@@ -60,11 +61,12 @@ const Edu = () => {
           ))}
         </div>
       </div>
+      <Chat />
       <Footer />
     </div>
   );
 };
 
-//style the card div in css to have multiple cards in a grid
+//style the card div in css to have multiple cards in a grid.
 
 export default Edu;

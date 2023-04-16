@@ -94,12 +94,12 @@ function Chat() {
       <button className="open-chat-button" onClick={togglePopup}>Chat with me...</button>
       {isVisible && (
         <>
-          <div className="overlay" onClick={togglePopup}></div>
+          <div  className="overlay" onClick={togglePopup}></div>
           <div className="popup">
-            <div style={{ position: 'relative', height: '500px', width: '500px' }}>
-              <MainContainer>
-                <ChatContainer>
-                  <MessageList
+            <div  style={{ backgroundColor: "#70627e", position: 'relative', height: '500px', width: '500px' }}>
+              <MainContainer style={{ backgroundColor: "#70627e" }}>
+                <ChatContainer style={{ backgroundColor: "#70627e" }}>
+                  <MessageList 
                     scrollBehavior="smooth"
                     typingIndicator={
                       isTyping ? (
@@ -111,8 +111,8 @@ function Chat() {
                       console.log(message);
                       return <Message key={i} model={message} />;
                     })}
-                  </MessageList>
-                  <MessageInput
+                  </MessageList >
+                  <MessageInput  style={{ backgroundColor: "#70627e" }}
                     placeholder="Type message here"
                     onSend={handleSend}
                   />
