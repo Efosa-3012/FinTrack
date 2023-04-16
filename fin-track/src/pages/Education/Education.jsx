@@ -1,84 +1,76 @@
-import "./Cards"
-// import React, { useState } from 'react';
-//  import Footer from "../../components/footer/Footer";
+import "./Cards";
+import "./Cards.css";
+import Card from "./Cards";
 import Header from "../../components/header/Header";
-// import Education from "../../components/Education/Education";
 import Chat from "../../components/chatgpt/Chatgpt";
-import Card from './Cards';
-import './Cards.css';
-
-
-
-
+import image from "../../assets/mail.JPG"
 
 const Edu = () => {
-  
   const data = [
     {
-      title: 'Budgeting',
-      description: 'Learn how to create a budget',
-      content: 'Budgeting is the process of creating a plan to spend your money. It involves identifying your sources of income, estimating your expenses, and balancing your income and expenses. A budget can help you save money, reduce debt, and achieve your financial goals.',
+      title: "Budgeting",
+      description: "Learn how to create a budget",
+      content:
+        "Budgeting is the process of creating a plan to spend your money. It involves identifying your sources of income, estimating your expenses, and balancing your income and expenses. A budget can help you save money, reduce debt, and achieve your financial goals.",
+      image:image
     },
     {
-      title: 'Credit Scores',
-      description:
-      'Learn how your credit score works',
-content: 'Your credit score is a number that represents your creditworthiness. It is calculated based on your credit history, including your payment history, the amount of debt you have, and the length of your credit history. A higher credit score can help you qualify for lower interest rates and better loan terms.',
-},
-{
-title: 'Investing',
-description: 'Learn how to invest your money',
-content: 'Investing is the process of putting your money into assets with the expectation of earning a profit. There are many different types of investments, including stocks, bonds, mutual funds, and real estate. Investing can help you grow your wealth and achieve your financial goals.',
-},
-{
-title: 'Taxes',
-description: 'Learn about taxes and how to file your tax return',
-content: 'Taxes are the way that governments raise revenue to pay for public services. If you earn income, you are required to file a tax return and pay taxes on that income. There are many different types of taxes, including income taxes, sales taxes, and property taxes.',
-},
-{
-title: 'Retirement',
-description: 'Learn how to save for retirement',
-content: `Retirement planning often slides down the priority list as people face daily responsibilities and find it overwhelming to predict their future needs. People struggle to identify with their future selves and underestimate the duration of their retirement, leading to procrastination in planning. To overcome these challenges, individuals can utilize online calculators, interactive tools, and educational resources to better understand their future needs, start saving early, and incrementally increase contributions to their retirement accounts.`,
-},
-{
-title: 'Debt Management',
-description: 'Learn how to manage your debt',
-content: 'Debt management involves creating a plan to pay off your debt. It involves identifying your debts, prioritizing which debts to pay off first, and developing a strategy to pay off your debts as quickly and efficiently as possible. Debt management can help you reduce your debt and improve your financial health.',
-},
-];
+      title: "Credit Scores",
+      description: "Learn how your credit score works",
+      content:
+        "Your credit score is a number that represents your creditworthiness. It is calculated based on your credit history, including your payment history, the amount of debt you have, and the length of your credit history. A higher credit score can help you qualify for lower interest rates and better loan terms.",
+    },
+    {
+      title: "Investing",
+      description: "Learn how to invest your money",
+      content:
+        "Investing is the process of putting your money into assets with the expectation of earning a profit. There are many different types of investments, including stocks, bonds, mutual funds, and real estate. Investing can help you grow your wealth and achieve your financial goals.",
+    },
+    {
+      title: "Taxes",
+      description: "Learn about taxes and how to file your tax return",
+      content:
+        "Taxes are the way that governments raise revenue to pay for public services. If you earn income, you are required to file a tax return and pay taxes on that income. There are many different types of taxes, including income taxes, sales taxes, and property taxes.",
+    },
+    {
+      title: "Retirement",
+      description: "Learn how to save for retirement",
+      content: `Retirement planning often slides down the priority list as people face daily responsibilities and find it overwhelming to predict their future needs. People struggle to identify with their future selves and underestimate the duration of their retirement, leading to procrastination in planning. To overcome these challenges, individuals can utilize online calculators, interactive tools, and educational resources to better understand their future needs, start saving early, and incrementally increase contributions to their retirement accounts.`,
+    },
+    {
+      title: "Debt Management",
+      description: "Learn how to manage your debt",
+      content:
+        "Debt management involves creating a plan to pay off your debt. It involves identifying your debts, prioritizing which debts to pay off first, and developing a strategy to pay off your debts as quickly and efficiently as possible. Debt management can help you reduce your debt and improve your financial health.",
+    },
+  ];
 
-          
+  return (
+    <>
+      <Header></Header>
+      <div className="financial-literacy">
+        <div className="body">
+          <h1>Financial Literacy</h1>
+          <div className="card-grid">
+            {data.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                description={card.description}
+                content={card.content}
+                image = {card.image}
+              />
+            ))}
+          </div>
+        </div>
 
-return (
-  <><Header></Header><div className="financial-literacy">
-    <div className="body">
-    <h1>Financial Literacy</h1>
-    <div className="card-grid">
-      {data.map((card, index) => (
-
-        <Card
-          key={index}
-          title={card.title}
-          description={card.description}
-          content={card.content} />
-      ))}
-    </div>
-    </div>
-
-    <Chat />
-
-  </div></>
-       
-);
-}
+        <Chat />
+      </div>
+    </>
+  );
+};
 
 export default Edu;
-
-
-
-
-
-
 
 //   const arr = [
 //     {
@@ -143,7 +135,7 @@ export default Edu;
 //               description={item.Description}
 //               />
 //           </a>
-          
+
 //           ))}
 //         </div>
 //       </div>
