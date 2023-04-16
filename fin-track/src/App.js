@@ -1,5 +1,5 @@
 import Home from "./pages/home/Home";
-import Education from "../src/pages/Education/Education.jsx"
+import Education from "../src/pages/Education/Education.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
