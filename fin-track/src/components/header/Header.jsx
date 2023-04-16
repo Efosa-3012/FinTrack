@@ -18,7 +18,7 @@ const Header = () => {
             <Link to={"/"}>Savings</Link>
           </li>
           <li>
-            <Link to={"/Chat"}>Financial Literacy</Link>
+            <Link to={"/education"}>Financial Literacy</Link>
           </li>
           <li>
             <Link to={"/"}>Profile</Link>
