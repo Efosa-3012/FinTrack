@@ -67,6 +67,6 @@ const Edu = () => {
   );
 };
 
-//style the card div in css to have multiple cards in a grid
+//style the card div in css to have multiple cards in a grid.
 
 export default Edu;
