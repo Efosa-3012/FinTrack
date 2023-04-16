@@ -10,8 +10,8 @@ const Card = ({title, description, icon}) => {
                 <i className={icon}></i>
             </div>
             <div className="card__content">
-                <h3 className="card__title">Test card</h3>
-                <p className="card__description">Test Description</p>
+                <h3 className="card__title">{title}</h3>
+                <p className="card__description">{description}</p>
             </div>
         </div>
     )

@@ -10,6 +10,7 @@
     background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    
     &:hover {
         transform: translateY(-0.5rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -43,3 +44,5 @@
         color: #333;
     }
 }
+
+
