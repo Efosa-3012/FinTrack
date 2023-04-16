@@ -91,7 +91,7 @@ function Chat() {
 
   return (
     <div className="App">
-      <button className="open-chat-button" onClick={togglePopup}>Open Chat</button>
+      <button className="open-chat-button" onClick={togglePopup}>Chat with me...</button>
       {isVisible && (
         <>
           <div className="overlay" onClick={togglePopup}></div>
@@ -103,7 +103,7 @@ function Chat() {
                     scrollBehavior="smooth"
                     typingIndicator={
                       isTyping ? (
-                        <TypingIndicator content="ChatGPT is typing" />
+                        <TypingIndicator content="FinTrack is typing" />
                       ) : null
                     }
                   >
