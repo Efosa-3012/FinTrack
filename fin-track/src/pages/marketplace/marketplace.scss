@@ -1,0 +1,46 @@
+
+.market-body{
+    background-color: #F7E1F9;
+    height: 83vh;
+    .market-body h1{
+        padding-left: 5rem;
+    }
+    .discounts{
+        padding-top: 2rem;
+        height: 13rem;
+        width: 13rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        row-gap: 1rem;
+    button{
+            width: 80px;
+            height: 30x;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+    }
+    .discounts-bar{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 6rem;
+        // margin: auto;
+        align-items: center;
+    }
+    .discounts img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        color:bisque;
+    }
+    
+}
+.market-body h1{
+    padding-left: 11.6rem;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
