@@ -1,12 +1,13 @@
 import "./home.scss";
 import React, { useState } from "react";
+import image2 from "../../assets/person2.jpeg";
+import image3 from "../../assets/person3.jpeg";
 import userImage from "../../assets/user.jpeg";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import FinancialTipCard from "./FinancialCard";
 import NewsTipCard from "./NewTips";
-
-
+import image4 from "../../assets/person4.jpeg";
 
 const financialTips = [
   "Create a budget to track your income and expenses.",
@@ -21,7 +22,6 @@ const financialTips = [
   "Review your insurance coverage to make sure you're adequately protected.",
 ];
 
-
 const financialNews = [
   "The Dow Jones Industrial Average hit a new record high today, fueled by strong earnings reports from major companies.",
   "The Federal Reserve announced that it will keep interest rates unchanged for the time being, citing concerns about inflation and economic growth.",
@@ -34,7 +34,6 @@ const financialNews = [
   "Amazon reported record profits in the latest quarter, driven by strong sales in its core e-commerce business and continued growth in its cloud computing division.",
   "The price of crude oil has surged to its highest level in more than three years, driven by supply disruptions and rising global demand.",
 ];
-
 
 function getRandomFinancialTip() {
   const randomIndex = Math.floor(Math.random() * financialTips.length);
@@ -49,7 +48,6 @@ function getRandomNewTip() {
 }
 
 const Home = () => {
-  
   const [currentTip, setCurrentTip] = useState(getRandomFinancialTip());
   const updateTip = () => {
     setCurrentTip(getRandomFinancialTip());
@@ -82,8 +80,8 @@ const Home = () => {
           {/* user profile scores */}
           <div className="user-points">
             <div className="user-points-sub">
-              <img src={userImage} alt="userpic" />
-              <p>Abby</p>
+              <img src={image4} alt="userpic" />
+              <p>Godsheritage</p>
             </div>
             <div className="user-points-sub2">
               <p>9000 points</p>
@@ -91,7 +89,7 @@ const Home = () => {
           </div>
           <div className="user-points">
             <div className="user-points-sub">
-              <img src={userImage} alt="userpic" />
+              <img src={image2} alt="userpic" />
               <p>Saad Nadeem</p>
             </div>
             <div className="user-points-sub2">
@@ -100,7 +98,7 @@ const Home = () => {
           </div>
           <div className="user-points">
             <div className="user-points-sub">
-              <img src={userImage} alt="userpic" />
+              <img src={image3} alt="userpic" />
               <p>Ahmad Conteh</p>
             </div>
             <div className="user-points-sub2">
@@ -108,19 +106,17 @@ const Home = () => {
             </div>
           </div>
           <div className="financial-tip-cards">
-          <div className="financial-card" onClick={updateTip}>
-            <FinancialTipCard tip={currentTip}/>
-          </div>
+            <div className="financial-card" onClick={updateTip}>
+              <FinancialTipCard tip={currentTip} />
+            </div>
 
-          <div className="financial-tip-cards">  </div>
-          <div className="financial-card" onClick={updateNewsTip}>
-            <NewsTipCard tip={currentNewTip}/>
-           
-          </div>
+            <div className="financial-tip-cards"> </div>
+            <div className="financial-card" onClick={updateNewsTip}>
+              <NewsTipCard tip={currentNewTip} />
+            </div>
           </div>
         </div>
 
-        
         {/* tip of the day app */}
       </div>
       <Footer />

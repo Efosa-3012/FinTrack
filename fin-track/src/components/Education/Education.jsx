@@ -1,7 +1,7 @@
 // A react component that is a card with title, desciption, icon
 
 import React from 'react'
-import "./Education.css"
+import "./Education.scss"
 
 const Card = ({title, description, icon}) => {
     return (

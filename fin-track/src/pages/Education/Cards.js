@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import './Cards.css';
+import React, { useState } from "react";
+import "./Cards.css";
 
-function Card({ title, description, content }) {
-  
+function Card({ title, description, content, image }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -15,18 +14,21 @@ function Card({ title, description, content }) {
   };
 
   return (
-   
     <div className="card" onClick={handleOpenModal}>
-      <h2 >{title}</h2>
+      <h2>{title}</h2>
       <p>{description}</p>
       {isOpen && (
-        <div  className="modal">
+        <div className="modal">
           <div className="modal-content">
+            {image ? <img src={image} alt="picformail" /> : <></>}
             <h2>{title}</h2>
             {content}
             <div>
-            <button onClick={handleCloseModal}>Close</button>
-            <br/>
+              <div className="btn-handles">
+                <button onClick={handleCloseModal}>Close</button>
+                <button onClick={handleCloseModal}>Take A Quiz</button>
+              </div>
+              <br />
             </div>
           </div>
         </div>
