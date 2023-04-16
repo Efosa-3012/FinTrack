@@ -20,7 +20,7 @@ const Home = () => {
                 <p>You currently have 5000 points</p>
               </div>
               <div>
-                <p>See your friend's dashboard</p>
+                <p>See your friend's Scoreboard</p>
               </div>
             </div>
           </div>
