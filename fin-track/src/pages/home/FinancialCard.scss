@@ -1,0 +1,32 @@
+// src/components/financialTipCard/FinancialTipCard.scss
+.financial-tip-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 300px; /* set the width to 300 pixels */
+    height: 280px;
+}
+
+  
+  .financial-tip-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .financial-tip-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .financial-tip-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .financial-card {
+    width: 45%; /* reduce the width of each card to fit both side-by-side */
+  }
